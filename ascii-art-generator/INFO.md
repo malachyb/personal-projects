@@ -1,0 +1,2 @@
+# Info:
+This generates ASCII art of any text consisting of  alphabetical characters and spaces. To use this program, download it off this repository and open it with any official python interpreter. When prompted, input text, and the program will respond with the ASCII art of your input.

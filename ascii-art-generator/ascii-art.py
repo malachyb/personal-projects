@@ -26,13 +26,13 @@ char_map = {'a': ['  ___  ', ' / _ \\ ', '/ /_\\ \\', '|  _  |', '| | | |', '\\_
             'z': [' ______', '|___  /', '   / / ', '  / /  ', './ /___', '\\_____/', '       ', '       '],
             ' ': ['        ', '        ', '        ', '        ', '        ', '        ', '        ', '        ']}
 
-text = input('Input text:').lower()
+text = input('Input text:').lower().strip()
 
 while 1:
     for char_part in range(8):
         line = ''
         for char in text:
-            if char.isalpha():
+            if char.isalpha() or char == ' ':
                 line += char_map[char][char_part]
         print(line)
     text = input('Input text:').lower()
